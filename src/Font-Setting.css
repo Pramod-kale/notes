@@ -1,0 +1,30 @@
+@font-face {
+    font-family: Meridiana-regular;
+    src: url('/public/Assets/Fonts/Meridiana/Meridiana-Black.otf');
+}
+
+
+@font-face {
+    font-family: Meridiana-Italic;
+    src: url('/public/Assets/Fonts/Meridiana/Meridiana-BlackOblique.otf');
+}
+
+@font-face {
+    font-family: Asap-Condensed-Regular;
+    src: url('/public/Assets/Fonts/Asap-condensed/AsapCondensed-Regular.ttf');
+}
+
+@font-face {
+    font-family: Asap-Condensed-Bold;
+    src: url('/public/Assets/Fonts/Asap-condensed/AsapCondensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: Asap-Condensed-BoldItalic;
+    src: url('/public/Assets/Fonts/Asap-condensed/AsapCondensed-BoldItalic.ttf');
+}
+
+@font-face {
+    font-family: Asap-Condensed-Italic;
+    src: url('/public/Assets/Fonts/Asap-condensed/AsapCondensed-Italic.ttf');
+}
