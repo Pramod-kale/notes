@@ -1,4 +1,5 @@
 import './App.scss';
+import './Components/Shared/StyleAssets/Styles-Presets.scss'
 import LayoutComponent from './Components/Layout/Layout-Component';
 
 function App() {

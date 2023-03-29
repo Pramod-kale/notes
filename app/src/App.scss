@@ -1,8 +1,10 @@
+@import './Components/Shared/StyleAssets/Colors-Styles.scss';
+
 .root-of-application {
-    color: #efefef;
+    color: $font-primary0;
     margin: auto;
     width: 100%;
 
     min-height: 100vh;
-    background-color: #121212;
+    background-color: $theme-color;
 }
