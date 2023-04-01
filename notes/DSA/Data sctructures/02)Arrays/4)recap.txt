@@ -1,0 +1,11 @@
+when to use arrays and when not, what they are best at
+
+    Advantages-
+        they are fast at lookup, faster data search
+        fast adding and removing data from them
+        they are ordered
+    
+    Disvantages-
+        slow inserts into the array at the middle part of an array
+        same applies for deleting elements from them
+        those are fixed in size if we are talking about static arrays
