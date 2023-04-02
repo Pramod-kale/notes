@@ -7,7 +7,6 @@ function App() {
     <div className="root-of-application">
       <LayoutComponent />
       <h1> this is for test</h1>
-      <h1> this is for another test</h1>
     </div>
   );
 }
