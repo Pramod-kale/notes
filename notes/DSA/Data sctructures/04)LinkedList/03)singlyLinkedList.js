@@ -118,7 +118,6 @@ class LinkedList {
 
 
 
-
 }
 
 const linkedList = new LinkedList(10)
