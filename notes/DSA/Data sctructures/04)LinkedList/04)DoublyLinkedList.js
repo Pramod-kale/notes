@@ -1,9 +1,10 @@
 
-class LinkedList {
+class DoublyLinkedList {
     constructor(value) {
         this.head = {
             value: value,
-            next: null
+            next: null,
+            previous: null
         }
         this.tail = this.head;
         this.length = 1;
@@ -12,8 +13,11 @@ class LinkedList {
 
     append(value) {
         const newNode = {
-            value, next: null
+            value,
+            next: null,
+            previous: null
         }
+        newNode.previous = this.tail;
         this.tail.next = newNode;
         this.tail = newNode;
         this.length++;
@@ -21,8 +25,13 @@ class LinkedList {
     }
 
     prepend(value) {
-        const newNode = { value, next: this.head }
+        const newNode = {
+            value,
+            next: this.head,
+            previous: null
+        }
         this.head = newNode;
+        this.head.previous = newNode;
         this.length++;
         return this;
     }
@@ -52,20 +61,23 @@ class LinkedList {
     insert(index, value) {
         let newNode = {
             value,
-            next: null
+            next: null,
+            previous: null
         }
 
         if (index >= this.length) {
             return this.append(newNode);
         }
 
-        const currentNode = this.traverse(index - 1);
-        const nextNodePointer = currentNode.next;
-        newNode.next = nextNodePointer
-        currentNode.next = newNode;
+        const currentNode = this.traverse(index - 1); // 3
+        const nextNodePointer = currentNode.next; // 5
+        currentNode.next = newNode; // pointing to new node we created
+        newNode.previous = currentNode; // pointing to current node from our new node
+        newNode.next = nextNodePointer; // 
+        nextNodePointer.previous = newNode;
         this.length++;
 
-        return this;
+        return this.printList();
     }
 
     remove(index) {
@@ -84,25 +96,11 @@ class LinkedList {
 
     }
 
-
-
-
-
 }
 
-const linkedList = new LinkedList(10)
+const linkedList = new DoublyLinkedList(10)
 
 linkedList.append(5)
-linkedList.append(9)
-linkedList.prepend(99)
-linkedList.insert(2, 89)
-linkedList.insert(4, 555)
-
-linkedList.remove(3)
-linkedList.remove(2)
-linkedList.remove(5)
-
-
-linkedList.printList()
-
+linkedList.prepend(6)
+linkedList.insert(2, 3)
 console.log(linkedList)

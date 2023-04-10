@@ -84,6 +84,37 @@ class LinkedList {
 
     }
 
+    reverse() {
+
+        const arrayOfList = this.printList()
+        let reversedLL = {
+            value: null,
+            next: null
+        }
+
+        let counter = 0;
+
+        while (counter <= arrayOfList.length) {
+
+            let newNode = {
+                value: arrayOfList[counter],
+                next: null
+            }
+
+            if (reversedLL.next === null) {
+                reversedLL.next = newNode;
+            } else {
+                reversedLL = newNode;
+            }
+
+            // console.log(newNode)
+            counter++
+        }
+
+        console.log('reversedLL', reversedLL)
+
+
+    }
 
 
 
@@ -98,11 +129,7 @@ linkedList.prepend(99)
 linkedList.insert(2, 89)
 linkedList.insert(4, 555)
 
-linkedList.remove(3)
-linkedList.remove(2)
-linkedList.remove(5)
 
+linkedList.reverse()
 
-linkedList.printList()
-
-console.log(linkedList)
+// console.log(linkedList)
