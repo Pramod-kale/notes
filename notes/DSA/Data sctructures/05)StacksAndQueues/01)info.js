@@ -6,7 +6,7 @@
 //  if we need to access any particular element we need to go through all the in between element till we find what was needed
 //  it has the  time complexity of O(1) for pop, push, peak and o(n) for lookup
 
-// ? Queues => Queues uses the FIFO method that is the first in first out
+// ? Queues => Queues uses the  FIFO method that is the first in first out
 //  similar to stacks queues has 4 different operations such as
 // lookup
 // enqueue for adding a element into the queue at last
