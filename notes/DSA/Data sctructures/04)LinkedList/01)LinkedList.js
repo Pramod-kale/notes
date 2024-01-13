@@ -29,3 +29,21 @@ const linkedList = ['apples', 'orange', 'grape'];
 
 
 //since javascript doesn't come with LL we will be creating our own check 03)LinkedList.js for more
+
+
+
+// 10 -- > 5 -- > 16
+
+
+// let myLinkedList = {
+//     head: {
+//         value: 10,
+//         next: {
+//             head: 5,
+//             next: {
+//                 value: 16,
+//                 next: null
+//             }
+//         }
+//     }
+// }
