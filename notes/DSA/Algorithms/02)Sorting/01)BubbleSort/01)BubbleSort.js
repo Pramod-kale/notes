@@ -5,7 +5,7 @@
 
 // implement a bubble sort for the following input
 
-let array = [1, 2.4, 39, 05, 68, 87, 99, 5, 3, 22];
+let array = [1, 2.4, 39, 5, 68, 87, 99, 5, 3, 22];
 
 
 function bubbleSort(array) {
