@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "typescript.format.semicolons": "insert",
+    "files.trimTrailingWhitespace": true,
+    "cody.autocomplete.enabled": false
+}

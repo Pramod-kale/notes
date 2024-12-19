@@ -81,7 +81,7 @@ const linearSearch = () => {
 let sortedArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
 let target = 11;
 
-const binarySearch = (array: number[], target: number) => {
+const binarySearch = (array: number[], target: number): boolean => {
     let low = 0;
     let high = array.length;
 
@@ -89,7 +89,7 @@ const binarySearch = (array: number[], target: number) => {
         const mid = Math.floor(low + (high - low) / 2);
         const val = array[mid]
         if (val === target) {
-            return val;
+            return true;
         } else if (target < val) {
             high = mid;
         } else {
