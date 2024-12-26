@@ -1,0 +1,1 @@
+//@ array.slice() method in array will deep copy the items and return the copied elements.
