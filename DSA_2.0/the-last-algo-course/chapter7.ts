@@ -13,6 +13,7 @@
  *
  * on the best case we will have a O(n log n)
  * on the worst case we will have O(n^2)
+ * refer ./images/quicksort.png
  */
 
 
