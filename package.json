@@ -1,0 +1,14 @@
+{
+  "name": "notes",
+  "packageManager": "yarn@4.2.2",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "ts-node"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.26.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}
