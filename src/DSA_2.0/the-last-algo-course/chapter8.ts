@@ -56,8 +56,8 @@ class DLL<T> {
         node.prev = curr.prev;
         curr.prev = node;
 
-        if (curr.prev) {
-            curr.prev.next = curr;
+        if (node.prev) {
+            node.prev.next = curr;
         }
     }
 
@@ -74,7 +74,7 @@ class DLL<T> {
         this.tail.next = node;
         this.tail = node;
     }
-    remove(item: T): T | undefined {
+    remove(item: TNode<T>): T | undefined {
         let curr = this.head;
 
         for (let i = 0; curr && i < this.length; ++i) {
@@ -126,12 +126,14 @@ class DLL<T> {
         if (!node) {
             return undefined;
         }
-
+        return this.remove(node);
 
     }
     private getAt(idx: number): TNode<T> | undefined {
-
+        let curr = this.head;
+        for (let i = 0; curr && i < idx; ++i) {
+            curr = curr.next;
+        }
+        return curr;
     }
-
-
 }
