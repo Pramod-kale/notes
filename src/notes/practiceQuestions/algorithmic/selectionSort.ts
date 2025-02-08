@@ -1,5 +1,6 @@
-const unsortArr = [64, 25, 12, 22, 11];
+// https://www.geeksforgeeks.org/selection-sort-algorithm-2/
 
+const unsortArr = [64, 25, 12, 22, 11];
 function SelectionSort(arr: number[]) {
   for (let i = 0; i < arr.length; ++i) {
     for (let j = i + 1; j < arr.length; ++j) {

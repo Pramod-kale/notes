@@ -1,4 +1,4 @@
-import SelectionSort from '../../practiceQuestions/algorithms/selectionSort';
+import SelectionSort from '../../practiceQuestions/algorithmic/selectionSort';
 
 describe('SelectionSort', () => {
     test('empty', () => {
