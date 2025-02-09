@@ -52,3 +52,36 @@ function walk(node: BinaryNode<number> | null, path: number[]): number[] {
 export function pre_order_search(head: BinaryNode<number>): number[] {
     return walk(head, []);
 }
+
+
+function walkInOrder(node: BinaryNode<number> | null, path: number[]): number[] {
+    if (!node) {
+        return path;
+    }
+    walkInOrder(node.left, path);
+    path.push(node.value);
+    walkInOrder(node.right, path);
+
+    return path;
+
+}
+
+export function in_order_search(head: BinaryNode<number>): number[] {
+    return walkI`nOrder(head, []);
+}
+
+function walkPostOrder(node: BinaryNode<number> | null, path: number[]): number[] {
+    if (!node) {
+        return path;
+    }
+    walkPostOrder(node.left, path);
+    walkPostOrder(node.right, path);
+    path.push(node.value);
+
+    return path;
+
+}
+
+export function post_order_search(head: BinaryNode<number>): number[] {
+    return walkPostOrder(head, []);
+};
