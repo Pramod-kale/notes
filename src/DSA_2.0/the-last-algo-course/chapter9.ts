@@ -67,7 +67,7 @@ function walkInOrder(node: BinaryNode<number> | null, path: number[]): number[] 
 }
 
 export function in_order_search(head: BinaryNode<number>): number[] {
-    return walkI`nOrder(head, []);
+    return walkInOrder(head, []);
 }
 
 function walkPostOrder(node: BinaryNode<number> | null, path: number[]): number[] {
@@ -84,4 +84,4 @@ function walkPostOrder(node: BinaryNode<number> | null, path: number[]): number[
 
 export function post_order_search(head: BinaryNode<number>): number[] {
     return walkPostOrder(head, []);
-};
+}
