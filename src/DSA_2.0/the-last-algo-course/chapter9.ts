@@ -13,8 +13,14 @@
  * 6) leaves => a node without children.
  * 7) balanced tree => a tree is perfectly balanced when any node's left and right children have the same height.
  * 8) branching factor => the amount of children a tree has.
- */
+ *
+*/
 
+/**
+ * These are referred as depth first search, because we are reaching into the leaf node first, we go deeper and deeper into the tree until we get the leaf node
+ * and return back the parent node na go deeper.
+ *
+ */
 /**
  * there are three types of tree search.
  * always look for left node first and right node after that
@@ -27,7 +33,7 @@
  *
  * look for the image for reference ./images/treeTraversal.png
  */
-
+//! Depth Fist Traversal
 //! Binary tree pre order search
 
 type BinaryNode<T> = {
