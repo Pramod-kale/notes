@@ -13,20 +13,20 @@
  * we can do linear search and iterate over all the items that gives us o(n).
  * also we can combine binary and jump right through the mid point and check for the breaking height and yes we found the breaking height, but what about the other ball
  * which also has a breaking height which lies just before the the midpoint we found with binary search, yes again we have to iterate through linearly and that gives as O(n).
- * 
+ *
  * so to tackle this we have sqrt(n) algo which is rare to find but efficient than O(n). so here is how it goes.
  *$ check for the image attached as ./images/sqrtn.png
  * so give the array we jump the array in sqrt of n places, and keep the record of last checkpoint.
  * if we get the right break point all we have to do is go back to the last checkpoint and check from there and this gives us the sqrt(n).
- * 
- * down we wll have the implementation. 
+ *
+ * down we wll have the implementation.
 */
 
-const sqrtArr = [false, false, false, false, false, false, false, true, true, true, true, true, true, true, true, true]
+const sqrtArr = [false, false, false, false, false, false, false, true, true, true, true, true, true, true, true, true];
 
-const sqrtSearch = (breaks:boolean[]):number => {
+const sqrt_search = (breaks: boolean[]): number => {
 
-    const jmpAmount = Math.floor(Math.sqrt(breaks.length))
+    const jmpAmount = Math.floor(Math.sqrt(breaks.length));
     let i = jmpAmount;
 
     for (; i < breaks.length; i += jmpAmount) {
@@ -42,7 +42,7 @@ const sqrtSearch = (breaks:boolean[]):number => {
         }
     }
     return -1;
-}
+};
 
 
-console.log(sqrtSearch(sqrtArr))
+console.log(sqrt_search(sqrtArr));

@@ -20,12 +20,8 @@
  * refer the image ./images/queue.png
  */
 
-type QNode<T> = {
-    value: T;
-    next?: QNode<T> | undefined;
-};
 
-class Queue<T> {
+class queue<T> {
     public length: number;
     private head?: QNode<T>;
     private tail?: QNode<T>;
@@ -78,11 +74,6 @@ class Queue<T> {
  * A stack a backwards of queue
  * refer image ./images/stack.png
  */
-
-type SNode<T> = {
-    value: T;
-    prev?: SNode<T>;
-};
 
 class Stack<T> {
     public length: number;

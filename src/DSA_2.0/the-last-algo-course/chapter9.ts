@@ -36,11 +36,6 @@
 //! Depth Fist Traversal
 //! Binary tree pre order search
 
-type BinaryNode<T> = {
-    value: T;
-    left: BinaryNode<T> | null;
-    right: BinaryNode<T> | null;
-};
 
 function walk(node: BinaryNode<number> | null, path: number[]): number[] {
     if (!node) {

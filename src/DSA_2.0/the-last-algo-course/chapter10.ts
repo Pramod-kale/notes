@@ -8,12 +8,6 @@
  * src/DSA_2.0/the-last-algo-course/images/bfs2.png
   */
 
-type BinaryNode<T> = {
-    value: T;
-    left: BinaryNode<T> | null;
-    right: BinaryNode<T> | null;
-};
-
 /**
  * Look for a number is present or not in the tree using BFS
  */

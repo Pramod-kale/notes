@@ -25,7 +25,7 @@
 //# An array of single element is always sorted
 
 const unsortedArray = [1, 4, 6, 2, 3, 9, 7, 8, 0, 5];
-const bubbleSort = (arr: number[]): void => {
+const bubble_sort = (arr: number[]): void => {
     for (let i = 0; i < arr.length; ++i) {
         for (let j = 0; j < arr.length - i - 1; ++j) {
             if (arr[j] > arr[j + 1]) {
@@ -38,4 +38,4 @@ const bubbleSort = (arr: number[]): void => {
     console.log(arr);
 };
 
-bubbleSort(unsortedArray);
+bubble_sort(unsortedArray);

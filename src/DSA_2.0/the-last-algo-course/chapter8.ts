@@ -1,10 +1,5 @@
 //! Doubly Linked List
 
-type TNode<T> = {
-    value: T;
-    prev?: TNode<T>;
-    next?: TNode<T>;
-};
 
 class DLL<T> {
     public length: number;
