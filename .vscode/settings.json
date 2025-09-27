@@ -2,5 +2,6 @@
     "editor.formatOnSave": true,
     "typescript.format.semicolons": "insert",
     "files.trimTrailingWhitespace": true,
-    "cody.autocomplete.enabled": false
+    "cody.autocomplete.enabled": false,
+    "github.copilot.completions.toggled": false
 }
