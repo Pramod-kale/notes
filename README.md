@@ -9,6 +9,8 @@ I will not emphasize more on the HTML and CSS part.
 
 The additional notes I refer to are linked down below:
 
+- [Frontend Interview Handbook](https://www.frontendlead.com/handbook/introduction  )
+
 - [JavaScript Cheat Sheet](https://zerotomastery.io/cheatsheets/javascript-cheatsheet-the-advanced-concepts/)
 - [Data Structures in JavaScript](https://github.com/sudheerj/datastructures-algorithms?tab=readme-ov-file)
 - [JavaScript Interview Questions](https://github.com/sudheerj/javascript-interview-questions?tab=readme-ov-file)
