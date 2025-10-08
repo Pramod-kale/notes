@@ -9,3 +9,5 @@
 8) optimalStockTrading.ts
 9) pairSum.ts
 10) stringAnagram.ts
+11) flipBinaryTree.ts
+12) depthOfBT.ts
