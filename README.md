@@ -1,4 +1,4 @@
-# This Repo is made for maintaining the notes about the stuffs I read for preparing for interviews.
+# This Repo is made for maintaining the notes about the stuffs I use for preparing for interviews.
 ## The code includes both javascript and typescript. i have used node js for runtime.
 
 - `./src/SystemDesign` contains highlights and new important topics I learn in frontend system design, mainly learnt from [greatfrontend.com](https://greatfrontend.com).
@@ -19,4 +19,4 @@ The additional notes I refer to are linked down below:
 - [Frontend Interview Prep](https://www.frontendinterviewhandbook.com/introduction)
 
 
-Note: This repo is maintained and developed with vscode. would suggest to install typescript debugger for local typescript code debugging and testing.
+Note: This repo is maintained and developed using vscode IDE. I would suggest to install typescript debugger extension from marketplace for local typescript code debugging and testing.
