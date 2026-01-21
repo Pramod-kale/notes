@@ -1,7 +1,6 @@
 (() => {
     function mostCommonElements(numbers: number[], k: number,): number[] {
 
-        debugger;
         const map: Record<number, number> = {};
 
         numbers.forEach((item) => {
